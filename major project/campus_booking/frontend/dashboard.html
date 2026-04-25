@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #3b5a89;
+        }
+
+
+   .sidebar {
+        width: 220px;
+        height: 100vh;
+        background: #697d92;
+        color: white;
+        position: fixed;
+        padding: 20px;
+    }
+
+    .sidebar h2 {
+        text-align: center;
+    }
+
+    .sidebar a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        margin: 15px 0;
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    .sidebar a:hover {
+        background: #495057;
+    }
+
+    .main {
+        margin-left: 240px;
+        padding: 20px;
+    }
+
+    .cards {
+        display: flex;
+        gap: 20px;
+    }
+
+    .card {
+        flex: 1;
+        background: rgb(169, 142, 142);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(165, 75, 75, 0.1);
+    }
+
+    .card h3 {
+        margin: 0;
+    }
+
+    .topbar {
+        background: rgb(152, 86, 86);
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 5px 10px rgba(209, 198, 207, 0.1);
+    }
+</style>
+
+
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>My App</h2>
+    <a href="#">Dashboard</a>
+    <a href="#">Profile</a>
+    <a href="#">Settings</a>
+    <a href="index.html">Logout</a>
+</div>
+
+<div class="main">
+    <div class="topbar">
+        <h2>Welcome to Dashboard 👋</h2>
+    </div>
+
+
+<div class="cards">
+    <div class="card">
+        <h3>Users</h3>
+        <p>120</p>
+    </div>
+
+    <div class="card">
+        <h3>Projects</h3>
+        <p>45</p>
+    </div>
+
+    <div class="card">
+        <h3>Tasks</h3>
+        <p>89</p>
+    </div>
+</div>
+
+
+</div>
+
+</body>
+</html>

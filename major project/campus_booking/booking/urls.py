@@ -1,0 +1,14 @@
+from django.urls import path, include
+from .views import analytics
+
+from rest_framework.routers import DefaultRouter
+from .views import ResourceViewSet, BookingViewSet
+
+router = DefaultRouter()
+router.register(r'resources', ResourceViewSet)
+router.register(r'bookings', BookingViewSet)
+
+urlpatterns = [
+    path('', include(router.urls)),
+    path('analytics/', analytics),
+]

@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* LEFT */
+.left {
+  flex: 1;
+  background: #0d1b2a;
+  color: white;
+  padding: 60px;
+}
+
+.left span {
+  font-style: italic;
+}
+
+.stats {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* RIGHT */
+.right {
+  flex: 1;
+  background: #f5f5f5;
+  padding: 80px;
+}
+
+.right input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: brown;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
